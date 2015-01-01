@@ -1,0 +1,16 @@
+#pageName: Log in
+#release: 120
+baseClass: "com.paypal.selion.testcomponents.BasicPageImpl"
+defaultLocale: "US"
+elements:
+  oddRowTextField:
+    locators:
+      US: "css=.oddRow"
+  bookButton:
+    locators:
+      US: "css=.btnSelectLO"
+  backButton:
+    locators:
+      US: "css=.backBtn"
+pageTitle:
+  US: "TSRTC Official Website for Online Bus Ticket Booking - tsrtcbus.in"

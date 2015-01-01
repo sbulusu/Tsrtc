@@ -1,0 +1,48 @@
+#pageName: Log in
+#release: 120
+baseClass: "com.paypal.selion.testcomponents.BasicPageImpl"
+defaultLocale: "US"
+elements:
+  fromTextField:
+    locators:
+      US: "css=#fromPlaceName"
+  fromUlTextField:
+    locators:
+      US: "css=#ui-id-1"
+  fromLiTextField:
+    locators:
+      US: "css=.ui-menu-item"
+  toTextField:
+    locators:
+      US: "css=#toPlaceName"
+  toUlTextField:
+    locators:
+      US: "css=#ui-id-2"
+  toLiTextField:
+    locators:
+      US: "css=.ui-menu-item"            
+  adultsTextField:
+    locators:
+      US: "css=#adultMale"
+  childsTextField:
+    locators:
+      US: "css=#childMale"
+  busTypeSelectList:
+    locators:
+      US: "css=#serviceClassId"
+  concessionSelectList:
+    locators:
+      US: "css=#concessionId"
+  departOnTextField:
+    locators:
+      US: "css=#txtJourneyDate"      
+  checkAvailabilityButton:
+    locators:
+      US: "css=#searchBtn"
+pageTitle:
+  US: "TSRTC Official Website for Online Bus Ticket Booking - tsrtcbus.in"
+pageValidators: [ 
+  checkAvailabilityButton,
+  fromTextField,
+  toTextField
+  ]

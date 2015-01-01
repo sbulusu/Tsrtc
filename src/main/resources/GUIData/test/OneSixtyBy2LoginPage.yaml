@@ -1,0 +1,31 @@
+baseClass: "com.paypal.selion.testcomponents.BasicPageImpl"
+defaultLocale: "US"
+elements:
+  mobileNumberTextField:
+    locators:
+      US: "css=#username"
+  passwordTextField:
+    locators:
+      US: "css=#password"
+  loginButton:
+    locators:
+      US: "css=.ind-reg-but.ind-but-butns"
+  sendFreeSMSButton:
+    locators:
+      US: "css=button[class='da-sms-btn']"
+  enterMobileNumberOrNameTextField:
+    locators:
+      US: "css=input[placeholder='Enter Mobile Number or Name']"      
+  enterYourMessageTextField:
+    locators:
+      US: "css=.sms-msg-tex"
+  sendNowButton:
+    locators:
+      US: "css=#btnsendsms"
+pageTitle:
+  US: "Welcome to India's Premier Messaging Portal. Send SMS across India - completely FREE"
+pageValidators: [ 
+  mobileNumberTextField,
+  passwordTextField,
+  loginButton
+  ]
