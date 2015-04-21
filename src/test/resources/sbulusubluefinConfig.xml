@@ -4,13 +4,13 @@
 
   <!-- optional (defaults to firefox). Firefox browser will be used for
     web test -->
-  <parameter name="browser" value="*firefox"/>
+  <parameter name="browser" value="*chrome"/>
 
   <parameter name="useLocalRC" value="true"/>
   <parameter name="hostname" value="localhost"/>
   <parameter name="runLocally" value="true"/>
   <parameter name="seleniumhost" value="localhost"/>
-  <parameter name="chromeDriverPath" value="C:\\AutomationScripts\\chromedriver.exe"/>
+  <parameter name="chromeDriverPath" value="C:\\Automation\\Selenium\\Drivers\\chromedriver.exe"/>
 
   <test name="SampleTest">
     <packages>
