@@ -67,13 +67,13 @@ public class commonMethods {
 		
 		if(found) {
 			Grid.driver().get("http://www.160by2.com/Index");
-			oneSixtyBy2LoginPage.setMobileNumberTextFieldValue("9902565036");
+			oneSixtyBy2LoginPage.setMobileNumberTextFieldValue("8985488161");
 			oneSixtyBy2LoginPage.setPasswordTextFieldValue("sairam");
 			oneSixtyBy2LoginPage.clickLoginButton();
 			
 			Grid.driver().switchTo().frame("by2Frame");
 			oneSixtyBy2LoginPage.clickSendFreeSMSButton(oneSixtyBy2LoginPage.getEnterMobileNumberOrNameTextField().getLocator());
-			oneSixtyBy2LoginPage.setEnterMobileNumberOrNameTextFieldValue("9902565036");
+			oneSixtyBy2LoginPage.setEnterMobileNumberOrNameTextFieldValue("8985488161");
 			oneSixtyBy2LoginPage.setEnterYourMessageTextFieldValue(message);
 			oneSixtyBy2LoginPage.clickSendNowButton();
 		}
