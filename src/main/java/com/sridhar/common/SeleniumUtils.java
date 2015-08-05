@@ -5,11 +5,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 
+import com.paypal.selion.logger.SeLionLogger;
 import com.paypal.selion.platform.grid.Grid;
-import com.paypal.selion.reports.runtime.WebReporter;
+import com.paypal.test.utilities.logging.SimpleLogger;
 
 public class SeleniumUtils {
-
+	
+	static SimpleLogger logger = SeLionLogger.getLogger();
+	
 	/**
 	 * Wait for any of the given text inputs to be present on the page.
 	 * 
@@ -27,7 +30,8 @@ public class SeleniumUtils {
 		String pageText = null;
 		int maxTimeOut;
 
-		WebReporter.log(Grid.driver().getTitle(), true, true);
+//		WebReporter.log(Grid.driver().getTitle(), true, true);
+		
 
 		if (timeout.length == 0) {
 			maxTimeOut = 120;

@@ -1,9 +1,8 @@
 package com.sridhar.common;
 
-import junit.framework.Assert;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 import com.paypal.selion.platform.grid.Grid;
 import com.paypal.selion.platform.utilities.WebDriverWaitUtils;
@@ -33,7 +32,7 @@ public class commonMethods {
 				break;
 			}
 		}
-		Assert.assertTrue("The given option could not be found", optionFound);
+		Assert.assertTrue(optionFound);
 		homePage.setToTextFieldValue("BNG KEMPEGOWDA BS TERMINAL 1 - BENGALURE");
 		WebDriverWaitUtils.waitUntilElementIsVisible(homePage.getToUlTextField().getLocator());
 		locator = homePage.getToLiTextField().getLocator();
@@ -47,7 +46,7 @@ public class commonMethods {
 				break;
 			}
 		}
-		Assert.assertTrue("The given option could not be found", optionFound);
+		Assert.assertTrue(optionFound);
 		homePage.setAdultsTextFieldValue("1");
 		homePage.setChildsTextFieldValue("0");
 		homePage.selectBusTypeSelectListByLabel("A/C CLASS");

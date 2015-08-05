@@ -6,7 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 
 
 public class DateUtils {
