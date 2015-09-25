@@ -9,12 +9,12 @@ import com.sridhar.common.commonMethods;
 
 public class CheckIfBookingsAllowed {
 
-	private commonMethods commonMethods = new commonMethods();
+    private commonMethods commonMethods = new commonMethods();
 
-	@Test
-	@WebTest
-	public  void checkIfBookingIsAllowed() throws ParseException{
-		
-		commonMethods.checkIfBookingIsAllowed("16/01/2015");
-	}
+    @Test
+    @WebTest
+    public void checkIfBookingIsAllowed() throws ParseException {
+
+        commonMethods.checkIfBookingIsAllowed("16/01/2015");
+    }
 }

@@ -1,0 +1,21 @@
+<suite thread-count="1" verbose="1" name="TestSuite"
+    configfailurepolicy="continue" skipfailedinvocationcounts="false"
+    junit="false" parallel="classes" data-provider-thread-count="1"
+    annotations="JDK">
+
+    <parameter name="browser" value="*firefox" />
+
+    <parameter name="useLocalRC" value="true" />
+    <parameter name="hostname" value="localhost" />
+    <parameter name="runLocally" value="true" />
+    <parameter name="seleniumhost" value="localhost" />
+    <parameter name="chromeDriverPath"
+        value="C:\\Automation\\Selenium\\Drivers\\chromedriver.exe" />
+
+    <test name="SampleTest">
+        <packages>
+            <package name="com.sridhar.testprojects.Tsrtc"></package>
+        </packages>
+    </test>
+</suite>
+
