@@ -3,6 +3,7 @@ package com.sridhar.testprojects.Tsrtc;
 import org.testng.annotations.Test;
 
 import com.paypal.selion.annotations.WebTest;
+import com.paypal.selion.platform.grid.Grid;
 
 public class GoogleTest {
 
@@ -10,7 +11,7 @@ public class GoogleTest {
     @WebTest
     public void test1() {
         // Grid.driver().get("http://www.google.com");
-        // Grid.driver().get("http://loner-staging.blacklinegps.com");
+        Grid.driver().get("http://loner-staging.blacklinegps.com");
         // try {
         // Thread.sleep(10000);
         // } catch (InterruptedException e) {
